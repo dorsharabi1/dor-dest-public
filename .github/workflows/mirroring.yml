@@ -13,11 +13,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Removing .github
-        run: |
-          ls -la
-          rm -rf .github
-          ls -la
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
